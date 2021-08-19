@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>EstudoEnum.Program.Benchy-20210819-193346</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19042.1165 (20H2/October2020Update)
+Intel Core i5-4460 CPU 3.20GHz (Haswell), 1 CPU, 4 logical and 4 physical cores
+.NET SDK=5.0.301
+  [Host]     : .NET 5.0.7 (5.0.721.25508), X64 RyuJIT  [AttachedDebugger]
+  DefaultJob : .NET 5.0.7 (5.0.721.25508), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Gen 0</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>NativeString</td><td>35.029 ns</td><td>0.5616 ns</td><td>0.5253 ns</td><td>0.0076</td><td>24 B</td>
+</tr><tr><td>FastToString</td><td>1.951 ns</td><td>0.0567 ns</td><td>0.0530 ns</td><td>-</td><td>-</td>
+</tr></tbody></table>
+</body>
+</html>
